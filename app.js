@@ -135,7 +135,7 @@ const translations = {
         footer_about: "About",
         footer_support: "Support",
         footer_help: "Help Center",
-        footer_terms: "Terms",
+        footer_terms: "Terms and Conditions",
         footer_privacy: "Privacy",
     },
 
@@ -272,7 +272,7 @@ const translations = {
         footer_about: "Nosotros",
         footer_support: "Soporte",
         footer_help: "Centro de Ayuda",
-        footer_terms: "Términos",
+        footer_terms: "Términos y Condiciones",
         footer_privacy: "Privacidad",
     }
 };
