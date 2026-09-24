@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions | AutoService</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .terms {
+            padding: 80px 20px;
+            min-height: 100vh;
+            background: #f8fafc;
+        }
+
+        .terms__container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 48px;
+            border-radius: 20px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        .terms__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 35px;
+        }
+
+        .terms__back {
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .terms__language {
+            display: flex;
+            gap: 8px;
+        }
+
+        .terms__language button {
+            border: 1px solid #d1d5db;
+            background: #ffffff;
+            padding: 8px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .terms__language button.active {
+            background: #111827;
+            color: #ffffff;
+        }
+
+        .terms h1 {
+            margin-bottom: 8px;
+        }
+
+        .terms h2 {
+            margin-top: 32px;
+            margin-bottom: 10px;
+        }
+
+        .terms p,
+        .terms li {
+            line-height: 1.7;
+        }
+
+        .terms ul {
+            padding-left: 24px;
+        }
+
+        .terms__meta {
+            color: #6b7280;
+            margin-bottom: 30px;
+        }
+
+        [data-lang-content] {
+            display: none;
+        }
+
+        [data-lang-content].active {
+            display: block;
+        }
+
+        @media (max-width: 700px) {
+            .terms__container {
+                padding: 28px 20px;
+            }
+
+            .terms__top {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="terms">
+        <div class="terms__container">
+
+            <div class="terms__top">
+                <a href="index.html" class="terms__back">← AutoService</a>
+
+                <div class="terms__language">
+                    <button id="lang-en" class="active" type="button">EN</button>
+                    <button id="lang-es" type="button">ES</button>
+                </div>
+            </div>
+
+            <!-- ENGLISH -->
+            <section data-lang-content="en" class="active">
+
+                <h1>Terms and Conditions</h1>
+
+                <p class="terms__meta">
+                    AutoService SaaS Agreement · Version 1.0 · Effective date: September 24, 2026
+                </p>
+
+                <p>
+                    These Terms and Conditions govern access to and use of AutoService,
+                    a Software as a Service (SaaS) solution designed to support the digital
+                    management of automotive workshops.
+                </p>
+
+                <h2>1. Service Description</h2>
+                <p>
+                    AutoService provides digital tools for the management of workshops,
+                    including customers, vehicles, mechanics, work orders, inventory,
+                    service information and other operational functions available within
+                    the platform.
+                </p>
+
+                <h2>2. User Accounts</h2>
+                <p>
+                    Users are responsible for providing accurate registration information,
+                    protecting their access credentials and maintaining the confidentiality
+                    of their accounts. Activities performed through an authenticated account
+                    are considered the responsibility of its authorized user.
+                </p>
+
+                <h2>3. Authorized Use</h2>
+                <p>Users agree not to use AutoService to:</p>
+                <ul>
+                    <li>Perform illegal or fraudulent activities.</li>
+                    <li>Attempt unauthorized access to accounts, systems or information.</li>
+                    <li>Interfere with the availability or security of the platform.</li>
+                    <li>Upload malicious software or intentionally harmful content.</li>
+                    <li>Use the service in a manner that affects other users.</li>
+                </ul>
+
+                <h2>4. Subscription and Plans</h2>
+                <p>
+                    AutoService may offer different subscription plans according to the
+                    functionality and service level provided. When paid plans are enabled,
+                    applicable prices, billing periods and included features will be presented
+                    to the user before subscription confirmation.
+                </p>
+
+                <h2>5. Service Availability</h2>
+                <p>
+                    AutoService seeks to maintain the platform available and operational.
+                    However, temporary interruptions may occur due to maintenance, updates,
+                    infrastructure incidents or circumstances outside the control of the service.
+                </p>
+
+                <h2>6. User Data</h2>
+                <p>
+                    Information registered in AutoService is used to provide the functions
+                    associated with the platform. Users are responsible for ensuring that the
+                    information they enter is legitimate and that they have authorization to
+                    manage it.
+                </p>
+
+                <h2>7. Security</h2>
+                <p>
+                    AutoService applies technical practices intended to protect access to the
+                    platform and its information. Users must also take reasonable measures to
+                    protect their credentials and devices.
+                </p>
+
+                <h2>8. Intellectual Property</h2>
+                <p>
+                    The AutoService name, interface, software components, documentation and
+                    original digital resources associated with the platform are protected by
+                    the corresponding intellectual property rights.
+                </p>
+
+                <h2>9. Suspension or Termination</h2>
+                <p>
+                    Access may be suspended or terminated when a user violates these Terms,
+                    compromises platform security or uses the service for unauthorized purposes.
+                </p>
+
+                <h2>10. Limitation of Service</h2>
+                <p>
+                    AutoService is a digital management tool and does not replace professional,
+                    technical or mechanical judgment. Decisions regarding vehicle maintenance,
+                    repair or safety remain the responsibility of qualified professionals and
+                    the corresponding workshop.
+                </p>
+
+                <h2>11. Changes to these Terms</h2>
+                <p>
+                    These Terms may be updated when AutoService introduces new functionality,
+                    changes its service model or requires adjustments to its operating conditions.
+                    The current version will remain publicly available on this page.
+                </p>
+
+                <h2>12. Contact</h2>
+                <p>
+                    Questions regarding these Terms and Conditions may be submitted through the
+                    contact section available on the AutoService website.
+                </p>
+
+            </section>
+
+            <!-- SPANISH -->
+            <section data-lang-content="es">
+
+                <h1>Términos y Condiciones</h1>
+
+                <p class="terms__meta">
+                    Acuerdo SaaS de AutoService · Versión 1.0 · Fecha de vigencia: 24 de septiembre de 2026
+                </p>
+
+                <p>
+                    Los presentes Términos y Condiciones regulan el acceso y uso de AutoService,
+                    una solución de Software como Servicio (SaaS) orientada a apoyar la gestión
+                    digital de talleres automotrices.
+                </p>
+
+                <h2>1. Descripción del servicio</h2>
+                <p>
+                    AutoService proporciona herramientas digitales para la gestión de talleres,
+                    incluyendo clientes, vehículos, mecánicos, órdenes de trabajo, inventario,
+                    información de servicios y otras funciones operativas disponibles dentro
+                    de la plataforma.
+                </p>
+
+                <h2>2. Cuentas de usuario</h2>
+                <p>
+                    Los usuarios son responsables de proporcionar información de registro
+                    correcta, proteger sus credenciales de acceso y mantener la confidencialidad
+                    de sus cuentas. Las actividades realizadas mediante una cuenta autenticada
+                    son responsabilidad de su usuario autorizado.
+                </p>
+
+                <h2>3. Uso autorizado</h2>
+                <p>Los usuarios se comprometen a no utilizar AutoService para:</p>
+                <ul>
+                    <li>Realizar actividades ilegales o fraudulentas.</li>
+                    <li>Intentar acceder sin autorización a cuentas, sistemas o información.</li>
+                    <li>Interferir con la disponibilidad o seguridad de la plataforma.</li>
+                    <li>Cargar software malicioso o contenido intencionalmente perjudicial.</li>
+                    <li>Utilizar el servicio de forma que afecte a otros usuarios.</li>
+                </ul>
+
+                <h2>4. Suscripciones y planes</h2>
+                <p>
+                    AutoService puede ofrecer diferentes planes de suscripción de acuerdo con
+                    las funcionalidades y niveles de servicio proporcionados. Cuando se habiliten
+                    planes de pago, los precios, periodos de facturación y funcionalidades
+                    incluidas serán presentados al usuario antes de confirmar una suscripción.
+                </p>
+
+                <h2>5. Disponibilidad del servicio</h2>
+                <p>
+                    AutoService busca mantener la plataforma disponible y operativa. Sin embargo,
+                    pueden producirse interrupciones temporales debido a mantenimiento,
+                    actualizaciones, incidentes de infraestructura o circunstancias externas
+                    al control del servicio.
+                </p>
+
+                <h2>6. Datos del usuario</h2>
+                <p>
+                    La información registrada en AutoService se utiliza para proporcionar las
+                    funcionalidades asociadas con la plataforma. Los usuarios son responsables
+                    de asegurar que la información ingresada sea legítima y que cuenten con
+                    autorización para administrarla.
+                </p>
+
+                <h2>7. Seguridad</h2>
+                <p>
+                    AutoService aplica prácticas técnicas destinadas a proteger el acceso a la
+                    plataforma y su información. Los usuarios también deben adoptar medidas
+                    razonables para proteger sus credenciales y dispositivos.
+                </p>
+
+                <h2>8. Propiedad intelectual</h2>
+                <p>
+                    El nombre AutoService, su interfaz, componentes de software, documentación
+                    y recursos digitales originales asociados con la plataforma se encuentran
+                    protegidos por los derechos de propiedad intelectual correspondientes.
+                </p>
+
+                <h2>9. Suspensión o terminación</h2>
+                <p>
+                    El acceso puede ser suspendido o terminado cuando un usuario incumpla estos
+                    Términos, comprometa la seguridad de la plataforma o utilice el servicio
+                    para fines no autorizados.
+                </p>
+
+                <h2>10. Limitación del servicio</h2>
+                <p>
+                    AutoService es una herramienta de gestión digital y no reemplaza el criterio
+                    profesional, técnico o mecánico. Las decisiones relacionadas con mantenimiento,
+                    reparación o seguridad de vehículos continúan siendo responsabilidad de los
+                    profesionales calificados y del taller correspondiente.
+                </p>
+
+                <h2>11. Modificaciones de los términos</h2>
+                <p>
+                    Estos Términos pueden actualizarse cuando AutoService incorpore nuevas
+                    funcionalidades, modifique su modelo de servicio o requiera ajustes en sus
+                    condiciones de operación. La versión vigente permanecerá disponible
+                    públicamente en esta página.
+                </p>
+
+                <h2>12. Contacto</h2>
+                <p>
+                    Las consultas relacionadas con estos Términos y Condiciones pueden realizarse
+                    mediante la sección de contacto disponible en el sitio web de AutoService.
+                </p>
+
+            </section>
+
+        </div>
+    </main>
+
+    <script>
+        const english = document.querySelector('[data-lang-content="en"]');
+        const spanish = document.querySelector('[data-lang-content="es"]');
+        const enButton = document.getElementById('lang-en');
+        const esButton = document.getElementById('lang-es');
+
+        function setTermsLanguage(language) {
+            const useSpanish = language === 'es';
+
+            english.classList.toggle('active', !useSpanish);
+            spanish.classList.toggle('active', useSpanish);
+
+            enButton.classList.toggle('active', !useSpanish);
+            esButton.classList.toggle('active', useSpanish);
+
+            document.documentElement.lang = language;
+            document.title = useSpanish
+                ? 'Términos y Condiciones | AutoService'
+                : 'Terms and Conditions | AutoService';
+
+            localStorage.setItem('autoservice-language', language);
+        }
+
+        enButton.addEventListener('click', () => setTermsLanguage('en'));
+        esButton.addEventListener('click', () => setTermsLanguage('es'));
+
+        const savedLanguage = localStorage.getItem('autoservice-language');
+        if (savedLanguage === 'es') {
+            setTermsLanguage('es');
+        }
+    </script>
+
+</body>
+</html>
