@@ -1,11 +1,8 @@
 ﻿# IDE
-.vscode/
 .idea/
 .vs/
 
 # Environment variables
-.env
-.env.*
 !.env.example
 
 # Dependencies
@@ -20,3 +17,4 @@ Thumbs.db
 
 # Logs
 *.log
+config.bat
