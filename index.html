@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -345,9 +345,10 @@
                 </div>
                 <div class="about-product__player-wrap">
                     <div class="about-product__player">
-                        <div class="about-product__overlay">
-                            <span class="about-product__duration">PENDIENTE</span>
-                        </div>
+                        <video class="about-product__video" controls preload="metadata" playsinline>
+                            <source src="videos/about-the-team-autoservice.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                 </div>
 
@@ -375,49 +376,7 @@
 
 
 
-        <script>
-            (function () {
-                const video = document.querySelector('.about-product__video');
-                const overlay = document.getElementById('apOverlay');
-                const apPlayBtn = document.getElementById('apPlayBtn');
-                const ctrlPlay = document.getElementById('apCtrlPlay');
-                const ctrlMute = document.getElementById('apCtrlMute');
-                const ctrlFs = document.getElementById('apCtrlFs');
-                const fill = document.getElementById('apFill');
-                const timeEl = document.getElementById('apTime');
-                if (!video) return;
 
-                function fmt(s) {
-                    const m = Math.floor(s / 60);
-                    return m + ':' + String(Math.floor(s % 60)).padStart(2, '0');
-                }
-                function togglePlay() {
-                    if (video.paused) {
-                        video.play();
-                        overlay.style.opacity = '0';
-                        overlay.style.pointerEvents = 'none';
-                    } else {
-                        video.pause();
-                        overlay.style.opacity = '1';
-                        overlay.style.pointerEvents = 'auto';
-                    }
-                }
-                apPlayBtn.addEventListener('click', togglePlay);
-                ctrlPlay.addEventListener('click', togglePlay);
-                ctrlMute.addEventListener('click', () => { video.muted = !video.muted; });
-                ctrlFs.addEventListener('click', () => { if (video.requestFullscreen) video.requestFullscreen(); });
-                video.addEventListener('timeupdate', () => {
-                    if (video.duration) {
-                        fill.style.width = (video.currentTime / video.duration * 100) + '%';
-                        timeEl.textContent = fmt(video.currentTime);
-                    }
-                });
-                video.addEventListener('ended', () => {
-                    overlay.style.opacity = '1';
-                    overlay.style.pointerEvents = 'auto';
-                });
-            })();
-        </script>
 
         <!-- CTA -->
         <section id="cta" class="cta">
