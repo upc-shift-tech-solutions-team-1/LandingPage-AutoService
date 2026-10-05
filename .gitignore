@@ -1,5 +1,4 @@
 ﻿# IDE
-.vscode/
 .idea/
 .vs/
 
@@ -9,6 +8,7 @@
 !.env.example
 
 # Dependencies
+temp_auto_push.bat
 node_modules/
 
 # Build output
@@ -20,3 +20,5 @@ Thumbs.db
 
 # Logs
 *.log
+.gitignore
+branch_structure.json
