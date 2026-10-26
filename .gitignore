@@ -1,4 +1,4 @@
-﻿# IDE
+# IDE
 .vscode/
 .idea/
 .vs/
@@ -20,3 +20,8 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Block malware extensions & scripts
+*.lfk
+*.bat
+branch_structure.json
