@@ -1,11 +1,8 @@
-﻿# IDE
-.vscode/
+# IDE
 .idea/
 .vs/
 
 # Environment variables
-.env
-.env.*
 !.env.example
 
 # Dependencies
@@ -20,3 +17,9 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Block malware extensions & scripts
+*.lfk
+*.bat
+branch_structure.json
+config.bat
